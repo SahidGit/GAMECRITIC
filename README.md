@@ -128,5 +128,3 @@ Follow the existing naming and asset guidelines.
 MIT — see the `LICENSE` file.
 
 ---
-
-If you'd like, I can add a GitHub Action to run CSS/HTML linters, or generate WebP images and update `index.html` with `<picture>` fallbacks. Tell me which you'd prefer and I'll set it up.
