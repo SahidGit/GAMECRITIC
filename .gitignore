@@ -1,0 +1,22 @@
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+
+# OneDrive desktop
+~$*
+
+# Logs
+*.log

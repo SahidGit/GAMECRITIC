@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameCritic - Your Ultimate Gaming Review Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+    <!-- Consolidated font includes to reduce duplicate imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Nunito:wght@400;700&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;600&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/refinery" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h1 class="cyberpunk-logo">GAMECRITIC</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="inter-medium">Home</a></li>
+          <li><a href="#games" class="inter-medium">Games</a></li>
+          <li><a href="#reviews" class="inter-medium">Reviews</a></li>
+          <li><a href="#trending" class="inter-medium">Trending</a></li>
+          <li><a href="#partners" class="inter-medium">Partners</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2 class="refinery-bold">Discover Your Next Favorite Game</h2>
+          <p class="nunito-regular">
+            The ultimate gaming review platform where players discover, rate,
+            and share their gaming experiences. Find your next adventure with
+            our comprehensive game database.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <!-- use numeric data-target for animation; data-suffix keeps the plus sign -->
+              <span class="stat-number" data-target="50000" data-suffix="+">0</span>
+              <span class="stat-label">Games Reviewed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="2000000" data-suffix="+">0</span>
+              <span class="stat-label">User Reviews</span>
+            </div>
+            <div class="stat">
+              <!-- percentage: keep as number but show % suffix -->
+              <span class="stat-number" data-target="95" data-suffix="%">0</span>
+              <span class="stat-label">Accuracy Rate</span>
+            </div>
+          </div>
+          <button class="cta-button inter-semibold">Explore Games</button>
+        </div>
+        <div class="hero-image">
+          <div class="featured-game">
+            <div class="game-poster">
+              <img src="assets/images/cyberpunk.jpg" alt="Featured Game" />
+              <div class="featured-badge">FEATURED</div>
+            </div>
+            <div class="game-rating">
+              <span class="rating-score">9.2</span>
+              <span class="rating-label">Critic Score</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="live-stats">
+        <div class="container">
+          <h3 class="refinery-bold">🔥 Live Gaming Pulse</h3>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">🎮</div>
+              <div class="stat-number" data-target="2847">0</div>
+              <div class="stat-label">Games Reviewed Today</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">👥</div>
+              <div class="stat-number" data-target="156">0</div>
+              <div class="stat-label">Active Reviewers</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">⭐</div>
+              <div class="stat-number" data-target="4.8">0</div>
+              <div class="stat-label">Avg Rating</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">💬</div>
+              <div class="stat-number" data-target="1243">0</div>
+              <div class="stat-label">Discussions Live</div>
+            </div>
+          </div>
+          <div class="live-indicator">
+            <span class="pulse-dot"></span>
+            <span class="live-text">LIVE</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="trending" class="trending-games">
+        <div class="container">
+          <h3 class="refinery-bold">🔥 Trending This Week</h3>
+          <div class="games-grid">
+            <div class="game-card">
+              <div class="game-image">
+                <img src="assets/images/cyberpunk.jpg" alt="Cyberpunk 2077" />
+                <div class="game-overlay">
+                  <span class="play-button">▶</span>
+                </div>
+              </div>
+              <div class="game-info">
+                <h4 class="rajdhani-semibold">Cyberpunk 2077</h4>
+                <div class="game-rating">
+                  <span class="rating-badge critic">85%</span>
+                  <span class="rating-badge user">7.2</span>
+                </div>
+                <p class="exo-regular">Action RPG</p>
+                <div class="game-platforms">
+                  <span class="platform">PC</span>
+                  <span class="platform">PS5</span>
+                  <span class="platform">Xbox</span>
+                </div>
+              </div>
+            </div>
+            <div class="game-card">
+              <div class="game-image">
+                <img
+                  src="https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg"
+                  alt="Elden Ring"
+                />
+                <div class="game-overlay">
+                  <span class="play-button">▶</span>
+                </div>
+              </div>
+              <div class="game-info">
+                <h4 class="rajdhani-semibold">Elden Ring</h4>
+                <div class="game-rating">
+                  <span class="rating-badge critic">96%</span>
+                  <span class="rating-badge user">8.9</span>
+                </div>
+                <p class="exo-regular">Action RPG</p>
+                <div class="game-platforms">
+                  <span class="platform">PC</span>
+                  <span class="platform">PS5</span>
+                  <span class="platform">Xbox</span>
+                </div>
+              </div>
+            </div>
+            <div class="game-card">
+              <div class="game-image">
+                <img src="assets/images/forza-horizon.jpg" alt="Forza Horizon 5" />
+                <div class="game-overlay">
+                  <span class="play-button">▶</span>
+                </div>
+              </div>
+              <div class="game-info">
+                <h4 class="rajdhani-semibold">Forza Horizon 5</h4>
+                <div class="game-rating">
+                  <span class="rating-badge critic">92%</span>
+                  <span class="rating-badge user">8.7</span>
+                </div>
+                <p class="exo-regular">Racing</p>
+                <div class="game-platforms">
+                  <span class="platform">PC</span>
+                  <span class="platform">Xbox</span>
+                </div>
+              </div>
+            </div>
+            <div class="game-card">
+              <div class="game-image">
+                <img src="assets/images/valorant.jpg" alt="Valorant" />
+                <div class="game-overlay">
+                  <span class="play-button">▶</span>
+                </div>
+              </div>
+              <div class="game-info">
+                <h4 class="rajdhani-semibold">Valorant</h4>
+                <div class="game-rating">
+                  <span class="rating-badge critic">88%</span>
+                  <span class="rating-badge user">8.1</span>
+                </div>
+                <p class="exo-regular">FPS</p>
+                <div class="game-platforms">
+                  <span class="platform">PC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="content">
+        <div class="container">
+          <div class="content-grid">
+            <div class="content-main">
+              <h3 class="inter-bold">Latest Gaming News</h3>
+              <div class="news-item">
+                <h4 class="inter-semibold">New AAA Title Announced for 2024</h4>
+                <p class="nunito-regular">
+                  Major gaming studio reveals their upcoming open-world
+                  adventure game set to release next year with stunning graphics
+                  and innovative gameplay mechanics.
+                </p>
+                <span class="news-date">2 hours ago</span>
+              </div>
+              <div class="news-item">
+                <h4 class="inter-semibold">
+                  Gaming Industry Awards 2024 Winners
+                </h4>
+                <p class="nunito-regular">
+                  The annual gaming awards ceremony celebrates the best games of
+                  the year across multiple categories including Game of the
+                  Year, Best Narrative, and Best Art Direction.
+                </p>
+                <span class="news-date">1 day ago</span>
+              </div>
+            </div>
+            <div class="content-sidebar">
+              <h4 class="inter-semibold">Top Genres</h4>
+              <div class="genre-list">
+                <div class="genre-item">
+                  <span class="genre-name">Action RPG</span>
+                  <span class="genre-count">1,234 games</span>
+                </div>
+                <div class="genre-item">
+                  <span class="genre-name">First Person Shooter</span>
+                  <span class="genre-count">856 games</span>
+                </div>
+                <div class="genre-item">
+                  <span class="genre-name">Strategy</span>
+                  <span class="genre-count">642 games</span>
+                </div>
+                <div class="genre-item">
+                  <span class="genre-name">Racing</span>
+                  <span class="genre-count">423 games</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <!-- Partners / Sponsors Section -->
+      <section id="partners" class="partners-section" aria-label="Partners and Sponsors">
+        <div class="container">
+          <h3 class="refinery-bold partners-title">Partners & Sponsors</h3>
+
+          <!-- Partners marquee -->
+          <div class="partners-marquee" aria-hidden="true">
+            <div class="marquee-track">
+              <div class="marquee-item"><img class="nvidia-plate" src="assets/images/nvidia-logo.png" alt="NVIDIA" /></div>
+              <div class="marquee-item"><img src="assets/images/alienware-logo.jpeg" alt="Alienware" /></div>
+              <div class="marquee-item"><img src="assets/images/amd.png" alt="AMD Ryzen" /></div>
+              <div class="marquee-item esrb-badge" role="img" aria-label="ESRB rating">ESRB<span class="esrb-rating">18+</span></div>
+              <div class="marquee-item"><img src="assets/images/gamecritic-logo.png" alt="GameCritic logo fallback for Intel" /></div>
+              <div class="marquee-item"><img class="logitech-plate" src="assets/images/logitech.png" alt="Logitech" /></div>
+              <div class="marquee-item"><img src="assets/images/playstation.jpeg" alt="PlayStation" /></div>
+              
+              <div class="marquee-item"><img class="nvidia-plate" src="assets/images/nvidia-logo.png" alt="NVIDIA" /></div>
+              <div class="marquee-item"><img src="assets/images/alienware-logo.jpeg" alt="Alienware" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4 class="footer-logo">GAMECRITIC</h4>
+            <p class="nunito-regular">
+              Your ultimate destination for gaming reviews, ratings, and
+              discovery.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4 class="inter-semibold">Quick Links</h4>
+            <ul>
+              <li><a href="#games" class="nunito-regular">Browse Games</a></li>
+              <li>
+                <a href="#reviews" class="nunito-regular">Latest Reviews</a>
+              </li>
+              <li><a href="#news" class="nunito-regular">Gaming News</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="inter-semibold">FIND US ON </h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" title="Facebook">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" title="Twitter">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" title="YouTube">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" title="Instagram">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="inter-regular">
+            &copy; 2025 GameCritic. All rights reserved. | Made with ❤️ for
+            gamers
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Navigation Toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-menu a").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+      });
+
+      // Animated Counter for Stats (supports formatting: K/M and suffixes)
+      function formatNumber(n) {
+        // format numbers into shortened K/M when >= 1000
+        if (n >= 1000000) return (n / 1000000).toFixed(n % 1000000 === 0 ? 0 : 1) + "M";
+        if (n >= 1000) return (n / 1000).toFixed(n % 1000 === 0 ? 0 : 1) + "K";
+        return String(n);
+      }
+
+      function animateCounter(element, target, duration = 2000, suffix = "") {
+        const start = 0;
+        const startTime = performance.now();
+
+        function step(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const value = Math.floor(progress * target);
+          // For percentages, don't format into K/M
+          const display = element.getAttribute("data-suffix") === "%" ? value : formatNumber(value);
+          element.textContent = display + (suffix || element.getAttribute("data-suffix") || "");
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            // Ensure exact final value
+            const finalDisplay = element.getAttribute("data-suffix") === "%" ? target : formatNumber(target);
+            element.textContent = finalDisplay + (suffix || element.getAttribute("data-suffix") || "");
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      // Intersection Observer for stats animation
+      const observerOptions = {
+        threshold: 0.4,
+        rootMargin: "0px 0px -80px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll(".stat-number");
+            statNumbers.forEach((stat) => {
+              const rawTarget = parseFloat(stat.getAttribute("data-target"));
+              const suffix = stat.getAttribute("data-suffix") || "";
+              animateCounter(stat, rawTarget, 2000, suffix);
+            });
+            obs.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Observe both hero-stats and live-stats
+      const heroStats = document.querySelector('.hero-stats');
+      const liveStats = document.querySelector('.live-stats');
+      if (heroStats) observer.observe(heroStats);
+      if (liveStats) observer.observe(liveStats);
+
+      // ---------- Partners marquee: detect dark logos and add light plate ----------
+      function addLogoPlates() {
+        // For each marquee img, try to detect if it's predominantly dark by
+        // sampling a scaled version onto a canvas (best-effort, cross-origin images must allow CORS).
+        const imgs = document.querySelectorAll('.marquee-track img');
+        imgs.forEach((img) => {
+          // If image is SVG or loaded from same origin, we can sample; otherwise fallback to adding plate
+          const src = img.getAttribute('src') || '';
+          // If the filename contains 'dark' or 'black' or is a raster likely dark, fallback add plate
+          const guessDark = /dark|black|bw|mono/i.test(src);
+          if (guessDark) {
+            img.classList.add('logo-plate');
+            return;
+          }
+
+          try {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const w = 20, h = 20; // small sample
+            canvas.width = w; canvas.height = h;
+            // draw scaled image
+            ctx.drawImage(img, 0, 0, w, h);
+            const data = ctx.getImageData(0, 0, w, h).data;
+            let dark = 0, total = 0;
+            for (let i = 0; i < data.length; i += 4) {
+              const r = data[i], g = data[i+1], b = data[i+2];
+              const lum = 0.2126*r + 0.7152*g + 0.0722*b; // relative luminance
+              if (lum < 60) dark++;
+              total++;
+            }
+            const darkRatio = dark / total;
+            if (darkRatio > 0.6) {
+              img.classList.add('logo-plate');
+            }
+          } catch (e) {
+            // Likely CORS; apply plate as fallback
+            img.classList.add('logo-plate');
+          }
+        });
+      }
+
+      // Run after window load to ensure images are available
+      window.addEventListener('load', () => {
+        addLogoPlates();
+      });
+    </script>
+  </body>
+</html>
