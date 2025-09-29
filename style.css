@@ -1,58 +1,8 @@
-/* Gaming Platform Font Classes */
-.orbitron-bold {
-    font-family: 'Orbitron', monospace;
-    font-weight: 700;
-}
-
-.orbitron-black {
-    font-family: 'Orbitron', monospace;
-    font-weight: 900;
-}
-
-/* Refinery Font Classes */
-.refinery-light {
-    font-family: 'Refinery', sans-serif;
-    font-weight: 300;
-}
-
-.refinery-regular {
-    font-family: 'Refinery', sans-serif;
-    font-weight: 400;
-}
-
-.refinery-medium {
-    font-family: 'Refinery', sans-serif;
-    font-weight: 500;
-}
-
-.refinery-semibold {
-    font-family: 'Refinery', sans-serif;
-    font-weight: 600;
-}
-
+/* Font helper classes (trimmed to only what's used) */
+/* Keep concise helper classes used by markup to reduce bloat */
 .refinery-bold {
     font-family: 'Refinery', sans-serif;
     font-weight: 700;
-}
-
-.refinery-black {
-    font-family: 'Refinery', sans-serif;
-    font-weight: 900;
-}
-
-.rajdhani-light {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 300;
-}
-
-.rajdhani-regular {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 400;
-}
-
-.rajdhani-medium {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
 }
 
 .rajdhani-semibold {
@@ -60,54 +10,9 @@
     font-weight: 600;
 }
 
-.rajdhani-bold {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-}
-
-.exo-light {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 300;
-}
-
 .exo-regular {
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
-}
-
-.exo-medium {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
-}
-
-.exo-semibold {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 600;
-}
-
-.exo-bold {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
-}
-
-.orbitron {
-    font-family: "Orbitron", sans-serif;
-    font-weight: 600;
-  }
-  
-
-/* Base Styles with Gaming Theme */
-body {
-    font-family: 'Refinery', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color: #e0e0e0;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-    min-height: 100vh;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-}
-.gilroy-font{
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 500;
 }
 
 .inter-medium {
@@ -115,9 +20,34 @@ body {
     font-weight: 500;
 }
 
+.inter-semibold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.nunito-regular {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
 .nunito-bold {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+}
+
+.gilroy-font{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
 }
 
 /* Reset and base styles */
@@ -127,6 +57,14 @@ body {
     box-sizing: border-box;
 }
 
+:root {
+    --bg-1: #050507;
+    --bg-2: #0b0b12;
+    --accent: #d5ff40;
+    --accent-2: #00ffff;
+    --muted: #cccccc;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -134,12 +72,18 @@ html {
 body {
     line-height: 1.6;
     overflow-x: hidden;
+    /* Site-wide dark background and default text color */
+    background: radial-gradient(1200px 800px at 10% 10%, rgba(0,255,255,0.03), transparent 10%),
+                linear-gradient(180deg, #050507 0%, #0b0b12 60%, #0a0a0a 100%);
+    color: #e6e6e6; /* default readable text color */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem; /* use rem-based horizontal padding */
 }
 
 /* Header and Navigation */
@@ -490,15 +434,7 @@ header {
     filter: drop-shadow(0 0 10px rgba(213, 255, 64, 0.5));
 }
 
-.stat-number {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #d5ff40;
-    font-family: 'Orbitron', monospace;
-    text-shadow: 0 0 15px rgba(213, 255, 64, 0.8);
-    margin-bottom: 0.5rem;
-    letter-spacing: 2px;
-}
+/* .stat-number: consolidated smaller definition below for hero-stats and cards */
 
 .stat-label {
     font-size: 1rem;
@@ -636,7 +572,7 @@ footer p {
 .stat-number {
     display: block;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 800;
     color: #d5ff40;
     font-family: 'Gilroy', sans-serif;
 }
@@ -686,7 +622,7 @@ footer p {
     letter-spacing: 1px;
 }
 
-.game-rating {
+.game-rating { /* kept minimal - reused in multiple places */
     background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     border-radius: 12px;
@@ -1323,9 +1259,9 @@ footer p {
 
 .partner img {
     max-width: 100%;
-    height: 60px; /* fixed height for visual consistency */
+    height: 3.75rem; /* approx 60px -> 3.75rem for scalability */
     width: auto;
-    object-fit: contain; /* maintain aspect ratio */
+    object-fit: contain;
     transition: transform 260ms ease, filter 260ms ease;
     display: block;
 }
@@ -1382,7 +1318,7 @@ footer p {
     align-items: center;
     animation: marquee 14s linear infinite;
 }
-.marquee-item img { height: 48px; width: auto; object-fit: contain; }
+.marquee-item img { height: 2.75rem; width: auto; object-fit: contain; }
 
 @keyframes marquee {
     0% { transform: translateX(0%); }
@@ -1404,7 +1340,7 @@ footer p {
 .partner img[src$=".svg"] { height: 64px; }
 
 /* Ensure static logos area hidden (we removed it from HTML but keep safety) */
-.partners-logos { display: none !important; }
+
 
 /* Single-line marquee polish */
 .marquee-track { white-space: nowrap; }
@@ -1430,14 +1366,12 @@ footer p {
 .nvidia-plate {
     position: relative;
     background: #fff;
-    padding: 8px 10px;
+    padding: 0.5rem 0.6rem;
     border-radius: 8px;
     display: inline-block;
     box-shadow: 0 8px 24px rgba(0,0,0,0.45);
 }
-.nvidia-plate img, .nvidia-plate { vertical-align: middle; }
 .marquee-item .nvidia-plate { padding: 6px 8px; }
-.nvidia-plate { height: auto; }
 
 /* If the NVIDIA is an <img> with the class directly, ensure the white plate is visible by wrapping in inline-block */
 .marquee-item img.nvidia-plate { background: #fff; padding: 6px 8px; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.45); }
@@ -1447,7 +1381,7 @@ footer p {
 .logitech-plate {
     position: relative;
     background: #fff;
-    padding: 6px 8px;
+    padding: 0.4rem 0.5rem;
     border-radius: 8px;
     display: inline-block;
     box-shadow: 0 8px 24px rgba(0,0,0,0.35);
@@ -1473,6 +1407,25 @@ footer p {
     line-height: 1; /* prevent vertical clipping */
     padding-left: 14px;
     padding-right: 14px;
+}
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    background: var(--accent);
+    color: #000;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    z-index: 2000;
 }
 .esrb-badge .esrb-rating {
     background: #000;

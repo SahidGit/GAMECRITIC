@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GameCritic — reviews, ratings and curated game discovery. Find top-rated games, read critic and user reviews, and discover what's trending." />
+    <meta name="theme-color" content="#0a0a0a" />
     <title>GameCritic - Your Ultimate Gaming Review Platform</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
@@ -14,6 +16,7 @@
     <link href="https://fonts.cdnfonts.com/css/refinery" rel="stylesheet">
   </head>
   <body>
+    <a class="skip-link" href="#site-main">Skip to content</a>
     <header>
       <nav class="navbar">
         <div class="nav-brand">
@@ -34,7 +37,7 @@
       </nav>
     </header>
 
-    <main>
+  <main id="site-main">
       <section id="home" class="hero">
         <div class="hero-content">
           <h2 class="refinery-bold">Discover Your Next Favorite Game</h2>
@@ -63,8 +66,8 @@
         </div>
         <div class="hero-image">
           <div class="featured-game">
-            <div class="game-poster">
-              <img src="assets/images/cyberpunk.jpg" alt="Featured Game" />
+              <div class="game-poster">
+              <img src="assets/images/cyberpunk.jpg" alt="Featured Game" loading="eager" />
               <div class="featured-badge">FEATURED</div>
             </div>
             <div class="game-rating">
@@ -113,7 +116,7 @@
           <div class="games-grid">
             <div class="game-card">
               <div class="game-image">
-                <img src="assets/images/cyberpunk.jpg" alt="Cyberpunk 2077" />
+                <img src="assets/images/cyberpunk.jpg" alt="Cyberpunk 2077" loading="lazy" />
                 <div class="game-overlay">
                   <span class="play-button">▶</span>
                 </div>
@@ -136,7 +139,7 @@
               <div class="game-image">
                 <img
                   src="https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg"
-                  alt="Elden Ring"
+                  alt="Elden Ring" loading="lazy"
                 />
                 <div class="game-overlay">
                   <span class="play-button">▶</span>
@@ -158,7 +161,7 @@
             </div>
             <div class="game-card">
               <div class="game-image">
-                <img src="assets/images/forza-horizon.jpg" alt="Forza Horizon 5" />
+                <img src="assets/images/forza-horizon.jpg" alt="Forza Horizon 5" loading="lazy" />
                 <div class="game-overlay">
                   <span class="play-button">▶</span>
                 </div>
@@ -178,7 +181,7 @@
             </div>
             <div class="game-card">
               <div class="game-image">
-                <img src="assets/images/valorant.jpg" alt="Valorant" />
+                <img src="assets/images/valorant.jpg" alt="Valorant" loading="lazy" />
                 <div class="game-overlay">
                   <span class="play-button">▶</span>
                 </div>
@@ -258,17 +261,18 @@
 
           <!-- Partners marquee -->
           <div class="partners-marquee" aria-hidden="true">
-            <div class="marquee-track">
-              <div class="marquee-item"><img class="nvidia-plate" src="assets/images/nvidia-logo.png" alt="NVIDIA" /></div>
+              <div class="marquee-track">
+              <div class="marquee-item"><img class="nvidia-plate" src="assets/images/nvidia-logo.png" alt="NVIDIA" loading="lazy" /></div>
               <div class="marquee-item"><img src="assets/images/alienware-logo.jpeg" alt="Alienware" /></div>
-              <div class="marquee-item"><img src="assets/images/amd.png" alt="AMD Ryzen" /></div>
+              <div class="marquee-item"><img src="assets/images/alienware-logo.jpeg" alt="Alienware" loading="lazy" /></div>
+              <div class="marquee-item"><img src="assets/images/amd.png" alt="AMD Ryzen" loading="lazy" /></div>
               <div class="marquee-item esrb-badge" role="img" aria-label="ESRB rating">ESRB<span class="esrb-rating">18+</span></div>
-              <div class="marquee-item"><img src="assets/images/gamecritic-logo.png" alt="GameCritic logo fallback for Intel" /></div>
-              <div class="marquee-item"><img class="logitech-plate" src="assets/images/logitech.png" alt="Logitech" /></div>
-              <div class="marquee-item"><img src="assets/images/playstation.jpeg" alt="PlayStation" /></div>
+              <div class="marquee-item"><img src="assets/images/gamecritic-logo.png" alt="GameCritic logo fallback for Intel" loading="lazy" /></div>
+              <div class="marquee-item"><img class="logitech-plate" src="assets/images/logitech.png" alt="Logitech" loading="lazy" /></div>
+              <div class="marquee-item"><img src="assets/images/playstation.jpeg" alt="PlayStation" loading="lazy" /></div>
               
-              <div class="marquee-item"><img class="nvidia-plate" src="assets/images/nvidia-logo.png" alt="NVIDIA" /></div>
-              <div class="marquee-item"><img src="assets/images/alienware-logo.jpeg" alt="Alienware" /></div>
+              <div class="marquee-item"><img class="nvidia-plate" src="assets/images/nvidia-logo.png" alt="NVIDIA" loading="lazy" /></div>
+              <div class="marquee-item"><img src="assets/images/alienware-logo.jpeg" alt="Alienware" loading="lazy" /></div>
             </div>
           </div>
         </div>
